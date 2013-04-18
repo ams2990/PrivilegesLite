@@ -16,7 +16,7 @@ public class BlockListener implements Listener {
     public BlockListener(Privileges plugin) {
     }
 
-    @EventHandler(priority = EventPriority.LOWEST, ignoreCancelled = true)
+    //@EventHandler(priority = EventPriority.LOWEST, ignoreCancelled = true)
     public void blockPlace(BlockPlaceEvent event) {
         if (!event.getPlayer().hasPermission("privileges.build")) {
             event.getPlayer().sendMessage("You don't have permission to do that!");
@@ -24,7 +24,7 @@ public class BlockListener implements Listener {
         }
     }
 
-    @EventHandler(priority = EventPriority.LOWEST, ignoreCancelled = true)
+    //@EventHandler(priority = EventPriority.LOWEST, ignoreCancelled = true)
     public void blockBreak(BlockBreakEvent event) {
         if (!event.getPlayer().hasPermission("privileges.build")) {
             event.getPlayer().sendMessage("You don't have permission to do that!");
