@@ -9,30 +9,6 @@
     <version>1.9</version>
     <name>Privileges</name>
 
-    <scm>
-        <developerConnection>scm:git:git@github.com:krinsdeath/Privileges.git</developerConnection>
-        <connection>scm:git:https://github.com/krinsdeath/Privileges.git</connection>
-        <url>https://github.com/krinsdeath/Privileges</url>
-    </scm>
-
-    <ciManagement>
-        <system>jenkins</system>
-        <url>http://ci.krincraft.net</url>
-    </ciManagement>
-
-    <distributionManagement>
-        <repository>
-            <id>ks-releases</id>
-            <name>KrinSoft Releases</name>
-            <url>http://files.krinsoft.net:8085/nexus/content/repositories/ks-releases</url>
-        </repository>
-        <snapshotRepository>
-            <id>ks-snapshots</id>
-            <name>KrinSoft Snapshots</name>
-            <url>http://files.krinsoft.net:8085/nexus/content/repositories/ks-snapshots</url>
-        </snapshotRepository>
-    </distributionManagement>
-
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.build.number>DEV</project.build.number>
@@ -51,7 +27,7 @@
         <dependency>
             <groupId>com.pneumaticraft.commandhandler</groupId>
             <artifactId>CommandHandler</artifactId>
-            <version>6</version>
+            <version>7</version>
             <type>jar</type>
             <scope>compile</scope>
             <exclusions>
@@ -82,25 +58,15 @@
     </dependencies>
 
     <repositories>
-        <!-- Bukkit Repository -->
+        <!-- MinerAp Repository -->
         <repository>
-            <id>bukkit-repo</id>
-            <url>http://repo.bukkit.org/content/groups/public/</url>
-        </repository>
-        <!-- Multiverse Repository -->
-        <repository>
-            <id>onarandombox</id>
-            <url>http://repo.onarandombox.com/content/groups/public/</url>
-        </repository>
-        <!-- KrinSoft Repository -->
-        <repository>
-            <id>krinsoft</id>
-            <url>http://files.krinsoft.net:8085/nexus/content/groups/public</url>
+            <id>minerap-repo</id>
+            <url>http://repo.minerap.com/content/groups/public/</url>
         </repository>
         <!-- Plugin Metrics Repository -->
         <repository>
             <id>metrics-repo</id>
-            <url>https://repo.mcstats.org/content/repositories/public</url>
+            <url>http://repo.mcstats.org/content/repositories/public</url>
         </repository>
     </repositories>
 
